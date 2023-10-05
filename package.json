@@ -1,13 +1,20 @@
 {
   "name": "jung-talents-developer-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "jung-talents-developer assignment",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "lint": "eslint client/src server --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "client-install": "cd-client && npm install",
-    "server-install": "cd-server && npm install",
-    "install-all-deps": "concurrently \"npm run server-install\" \"npm run client-install\" "
+    "client-install": "cd client && npm install",
+    "server-install": "cd server && npm install",
+    "install-all-deps": "concurrently \"npm run server-install\" \"npm run client-install\" ",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "start": "concurrently \"cd server && npm run start\" \"cd client && npm run preview\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "author": "Do Dang Huy",
   "license": "ISC",
