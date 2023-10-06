@@ -24,6 +24,5 @@ module.exports = {
   plugins: [
     'react',
   ],
-  rules: {
-  },
+  rules: { 'import/no-extraneous-dependencies': 0 },
 };

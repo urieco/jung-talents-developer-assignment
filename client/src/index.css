@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --secondary_1: #676F54;
+}
+
+* {
+  /* outline: 1px solid red; */
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #ef4444;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: #22c55e;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+  display: block;
+}
