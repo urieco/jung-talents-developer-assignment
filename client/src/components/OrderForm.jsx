@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AutocompletionContext } from '../contexts/AutocompletionContext';
+
 import Field from './forms/Field';
 import TotalAmountGroup from './forms/TotalAmountGroup';
 import ConsumerGroup from './forms/ConsumerGroup';
@@ -10,6 +11,7 @@ import DiscountsGroup from './forms/DiscountsAmount';
 import MerchantGroup from './forms/MerchantGroup';
 import ShippingAmountGroup from './forms/ShippingAmountGroup';
 import TaxAmountGroup from './forms/TaxAmountGroup';
+import ScalapayWidget from './ScalapayWidget';
 
 function OrderForm() {
   const { setIsAutocomplete } = useContext(AutocompletionContext);
@@ -35,6 +37,11 @@ function OrderForm() {
         >
           Proceed to Checkout
         </button>
+        <div
+          className="bg-sky-200 text-gray-600 p-2"
+        >
+          <ScalapayWidget />
+        </div>
         <TotalAmountGroup />
         <ConsumerGroup />
         <BillingGroup />
