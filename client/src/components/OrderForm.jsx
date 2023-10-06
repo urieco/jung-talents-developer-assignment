@@ -20,7 +20,7 @@ function OrderForm() {
     <div className="w-screen h-full grid md:place-content-center px-4 pt-8 md:pt-24 pb-8">
       <form
         className="text-gray-200 bg-indigo-700/60 w-full md:w-[45vw] lg:w-[25vw] h-full flex flex-col px-4 pt-8 rounded-lg shadow-lg overflow-auto"
-        action=""
+        action="http://localhost:8080/order/"
         method="post"
       >
         <h1 className="text-3xl md:text-4xl font-bold text-center md:py-4">PLACE YOUR ORDER</h1>
@@ -61,7 +61,7 @@ function OrderForm() {
           <label htmlFor="installment-select" className="flex flex-col">
             <span className="font-extralight">Choose a payment installments:</span>
             <select
-              name="installment-select"
+              name="installments"
               id="installment-select"
               className="text-black font-semibold p-2 rounded-lg mt-2 mb-6"
             >

@@ -8,28 +8,28 @@ function ConsumerGroup() {
       <Field
         title="Phone Number"
         type="text"
-        id="consumer-phoneNumber"
+        id="consumerPhoneNumber"
         placeholderText="1234567890"
         acceptPattern="\d+"
       />
       <Field
         title="Given Name"
         type="text"
-        id="consumer-givenNames"
+        id="consumerGivenNames"
         placeholderText="John"
         isRequired
       />
       <Field
         title="Last Name"
         type="text"
-        id="consumer-surname"
+        id="consumerSurname"
         placeholderText="Doe"
         isRequired
       />
       <Field
         title="Email"
         type="email"
-        id="consumer-email"
+        id="consumerEmail"
         placeholderText="john.doe@scalapay.com"
       />
     </>

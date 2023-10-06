@@ -8,27 +8,43 @@ function ItemsGroup() {
       <Field
         title="Global Trade Item Number"
         type="text"
-        id="items-gtin"
+        id="itemsGtin"
         placeholderText="12358791330"
+      />
+      <Field
+        title="Item's amount"
+        type="text"
+        id="itemsAmount"
+        placeholderText="190.00"
+        isRequired
+        acceptPattern="^\d+\.\d{2}$"
+      />
+      <Field
+        title="Item's currency"
+        type="text"
+        id="itemsCurrency"
+        placeholderText="EUR"
+        isRequired
+        acceptPattern="[A-Z]{3}"
       />
       <Field
         title="Quantity"
         type="number"
-        id="items-quantity"
+        id="itemsQuantity"
         placeholderText="1"
         isRequired
       />
       <Field
         title="Product Name"
         type="text"
-        id="items-name"
+        id="itemsName"
         placeholderText="T-Shirt"
         isRequired
       />
       <Field
         title="Category"
         type="text"
-        id="items-category"
+        id="itemsCategory"
         placeholderText="IT"
         isRequired
         acceptPattern="[A-Z]{2,3}"
@@ -36,32 +52,32 @@ function ItemsGroup() {
       <Field
         title="Subcategories"
         type="text"
-        id="items-subcategory"
+        id="itemsSubcategory"
         placeholderText="Shirt"
       />
       <Field
         title="Stock Keeping Unit Code"
         type="text"
-        id="items-sku"
+        id="itemsSku"
         placeholderText="12341234"
         isRequired
       />
       <Field
         title="Brand"
         type="text"
-        id="items-branc"
+        id="itemsBrand"
         placeholderText="TopChoice"
       />
       <Field
         title="Page URL"
         type="url"
-        id="items-pageUrl"
+        id="itemsPageUrl"
         placeholderText="https://www.scalapay.com//product/view/"
       />
       <Field
         title="Image URL"
         type="url"
-        id="items-imageURL"
+        id="itemsImageUrl"
         placeholderText="https://www.scalapay.com//product/view/"
       />
     </>

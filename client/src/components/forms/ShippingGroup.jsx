@@ -8,14 +8,14 @@ function ShippingGroup() {
       <Field
         title="Phone Number"
         type="text"
-        id="shipping-phoneNumber"
+        id="shippingPhoneNumber"
         placeholderText="1234567890"
         acceptPattern="\d+"
       />
       <Field
         title="Country Code"
         type="text"
-        id="shipping-countryCode"
+        id="shippingCountryCode"
         placeholderText="IT"
         isRequired
         acceptPattern="[A-Z]{2,3}"
@@ -23,14 +23,14 @@ function ShippingGroup() {
       <Field
         title="Name"
         type="text"
-        id="shipping-name"
+        id="shippingName"
         isRequired
         placeholderText="John Doe"
       />
       <Field
         title="Post Code"
         type="text"
-        id="shipping-postcode"
+        id="shippingPostcode"
         isRequired
         placeholderText="50056"
         acceptPattern="\d+"
@@ -38,14 +38,14 @@ function ShippingGroup() {
       <Field
         title="Suburb"
         type="text"
-        id="shipping-suburb"
+        id="shippingSuburb"
         isRequired
         placeholderText="Montelupo Fiorentino"
       />
       <Field
         title="Address"
         type="text"
-        id="shipping-line1"
+        id="shippingLine1"
         isRequired
         placeholderText="Via della Rosa, 58"
       />

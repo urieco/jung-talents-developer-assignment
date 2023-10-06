@@ -8,40 +8,40 @@ function BillingGroup() {
       <Field
         title="Phone Number"
         type="text"
-        id="billing-phoneNumber"
+        id="billingPhoneNumber"
         placeholderText="1234567890"
         acceptPattern="\d+"
       />
       <Field
         title="Country Code"
         type="text"
-        id="billing-countryCode"
+        id="billingCountryCode"
         placeholderText="IT"
         acceptPattern="[A-Z]{2,3}"
       />
       <Field
         title="Name"
         type="text"
-        id="billing-name"
+        id="billingName"
         placeholderText="John Doe"
       />
       <Field
         title="Post Code"
         type="text"
-        id="billing-postcode"
+        id="billingPostcode"
         placeholderText="50056"
         acceptPattern="\d+"
       />
       <Field
         title="Suburb"
         type="text"
-        id="billing-suburb"
+        id="billingSuburb"
         placeholderText="Montelupo Fiorentino"
       />
       <Field
         title="Address"
         type="text"
-        id="billing-line1"
+        id="billingLine1"
         placeholderText="Via della Rosa, 58"
       />
     </>

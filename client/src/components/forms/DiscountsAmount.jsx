@@ -8,7 +8,7 @@ function DiscountsGroup() {
       <Field
         title="Discount Amount"
         type="text"
-        id="discounts-amount"
+        id="discountsAmount"
         placeholderText="3.00"
         isRequired
         acceptPattern="^\d+\.\d{2}$"
@@ -16,7 +16,7 @@ function DiscountsGroup() {
       <Field
         title="Discount Currency"
         type="text"
-        id="discounts-currency"
+        id="discountsCurrency"
         placeholderText="EUR"
         isRequired
         acceptPattern="[A-Z]{3}"
@@ -24,7 +24,7 @@ function DiscountsGroup() {
       <Field
         title="Discount Description"
         type="text"
-        id="discounts-displayName"
+        id="discountsDisplayName"
         placeholderText="10% Off"
       />
     </>
