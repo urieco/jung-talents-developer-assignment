@@ -39,7 +39,7 @@ function Field({
         name={id}
         id={id}
         placeholder={placeholderText}
-        className="text-black font-semibold placeholder:font-extralight hover:bg-gray-200 my-2 w-full md:w-[35vw] appearance-none p-1 border border-secondary_1 rounded-lg"
+        className="text-black font-semibold placeholder:font-extralight hover:bg-gray-200 my-2 w-full appearance-none p-1 border border-secondary_1 rounded-lg"
         onChange={handleChange}
         onBlur={handleOnBlur}
         required={isRequired}
@@ -66,7 +66,7 @@ Field.defaultProps = {
   id: '',
   placeholderText: '',
   isRequired: false,
-  acceptPattern: '/./',
+  acceptPattern: '.+',
 };
 
 export default Field;

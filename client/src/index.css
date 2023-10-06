@@ -6,8 +6,25 @@
   --secondary_1: #676F54;
 }
 
-* {
-  /* outline: 1px solid red; */
+::-webkit-scrollbar {
+  width: 0.25em;
+  height: 0.25em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 165, 165);
+}
+
+@supports (scrollbar-color: lightgray white) {
+  *{
+    scrollbar-color: lightgray white;
+    scrollbar-width: thin;
+  }
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {

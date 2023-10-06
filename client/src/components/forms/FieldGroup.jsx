@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 
 import { AiOutlineCaretUp, AiOutlineCaretDown } from 'react-icons/ai';
 
-function FieldGroup({ title, id, children }) {
-  const [display, setDisplay] = useState(true);
+function FieldGroup({
+  title, id, isVisible, children,
+}) {
+  const [display, setDisplay] = useState(isVisible);
 
   const handleClick = () => setDisplay((prev) => !prev);
 
@@ -13,7 +15,7 @@ function FieldGroup({ title, id, children }) {
   };
 
   return (
-    <section className="p-2 border rounded-lg my-2" id={id}>
+    <section className="w-full p-2 border rounded-lg my-2" id={id}>
       <h1 className="text-lg font-medium relative">
         {title}
         <button
@@ -34,7 +36,12 @@ function FieldGroup({ title, id, children }) {
 FieldGroup.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  isVisible: PropTypes.bool,
   children: PropTypes.node.isRequired,
+};
+
+FieldGroup.defaultProps = {
+  isVisible: false,
 };
 
 export default FieldGroup;

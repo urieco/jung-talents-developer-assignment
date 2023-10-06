@@ -2,36 +2,41 @@ import React from 'react';
 import FieldGroup from './FieldGroup';
 import Field from './Field';
 
-function TotalAmountGroup() {
+function DiscountsGroup() {
   const node = (
     <>
       <Field
-        title="Amount of the order"
+        title="Discount Amount"
         type="text"
-        id="amount"
-        placeholderText="190.00"
+        id="discounts-amount"
+        placeholderText="3.00"
         isRequired
         acceptPattern="^\d+\.\d{2}$"
       />
       <Field
-        title="Currency Type"
+        title="Discount Currency"
         type="text"
-        id="currency"
+        id="discounts-currency"
         placeholderText="EUR"
         isRequired
         acceptPattern="[A-Z]{3}"
+      />
+      <Field
+        title="Discount Description"
+        type="text"
+        id="discounts-displayName"
+        placeholderText="10% Off"
       />
     </>
   );
   return React.createElement(
     FieldGroup,
     {
-      title: 'Total Amount of the order',
-      id: 'totalAmount',
-      isVisible: true,
+      title: 'Discounts',
+      id: 'discounts',
     },
     node,
   );
 }
 
-export default TotalAmountGroup;
+export default DiscountsGroup;

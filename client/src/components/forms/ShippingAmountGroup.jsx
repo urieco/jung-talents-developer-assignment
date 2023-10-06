@@ -2,23 +2,21 @@ import React from 'react';
 import FieldGroup from './FieldGroup';
 import Field from './Field';
 
-function TotalAmountGroup() {
+function ShippingAmountGroup() {
   const node = (
     <>
       <Field
-        title="Amount of the order"
+        title="Shipping Amount"
         type="text"
-        id="amount"
-        placeholderText="190.00"
-        isRequired
+        id="shippingAmount"
+        placeholderText="10.00"
         acceptPattern="^\d+\.\d{2}$"
       />
       <Field
-        title="Currency Type"
+        title="Shipping Amount Currency"
         type="text"
-        id="currency"
+        id="shippingAmountCurrency"
         placeholderText="EUR"
-        isRequired
         acceptPattern="[A-Z]{3}"
       />
     </>
@@ -26,12 +24,11 @@ function TotalAmountGroup() {
   return React.createElement(
     FieldGroup,
     {
-      title: 'Total Amount of the order',
-      id: 'totalAmount',
-      isVisible: true,
+      title: 'Total Shipping Amount',
+      id: 'totalShippingAmount',
     },
     node,
   );
 }
 
-export default TotalAmountGroup;
+export default ShippingAmountGroup;
