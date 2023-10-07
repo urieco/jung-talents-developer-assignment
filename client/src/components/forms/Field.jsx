@@ -11,7 +11,7 @@ function Field({
   const [currentValue, setCurrentValue] = useState('');
 
   useEffect(() => {
-    if (isAutocomplete) {
+    if (isAutocomplete && currentValue === '') {
       setCurrentValue(placeholderText);
     }
   }, [isAutocomplete]);
