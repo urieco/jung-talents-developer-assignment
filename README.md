@@ -1,7 +1,10 @@
 ## Assignment:
 **Creates an order**:
+
 [x] Prompt the user to enter the fields required to create an order.
+  
 [x] Call the v2/orders endpoint.
+  
 [x] Redirect the user to the checkoutURL provided in the response.
 
 ## Tech stack
