@@ -43,7 +43,7 @@ $ npm run start
 
 **UI Instructions:**
 - A simple form with various fields. A group of fields stay in their designated field group (e.g. "Total Amount of order", "Customer's Information"...). Most of the field groups are closed by default. Click on the caret symbol to open the group.
-- "Quick Autocompletion For Testing" button to quickly fill out all the rest of the form fields with its accepted placeholder text. **Warning**: It will overwrite existing inputs.
+- "Quick Autocompletion For Testing" button to quickly fill out all the rest of the form fields with its acceptable placeholder text.
 - Fill out all the 'required' fields, emphasized by the small asterisk by the right side of the field's title. Then, proceed to checkout. 
 
 ## Known Issues: 
